@@ -1,7 +1,8 @@
 import {Menu} from "./STATES/Menu"
 import {GameOver} from "./STATES/GameOver";
+import {Preload} from "./STATES/Preload";
 
-export class Game extends Phaser.Game {
+export class SnakeGame extends Phaser.Game {
     app: CHAOTIVE.FW.APP.App;
 
     constructor(app) {
@@ -9,10 +10,12 @@ export class Game extends Phaser.Game {
 
         this.app = app;
 
+        this.state.add('Preload', Preload, false);
         this.state.add('Menu', Menu, false);
         this.state.add('GameOver', GameOver, false);
-        this.state.start('Menu');
 
-        console.log("Game started...");
+        this.state.start('Preload');
+        console.log("SnakeGame started...");
     }
+
 }

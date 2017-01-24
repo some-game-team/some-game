@@ -1,7 +1,7 @@
-import {Game} from "./Game";
+import {SnakeGame} from "./SnakeGame";
 
 export class App extends CHAOTIVE.FW.APP.App {
-    game: Game;
+    game: SnakeGame;
 
     constructor(configType = "main") {
         super(configType, () => this.start());
@@ -10,7 +10,7 @@ export class App extends CHAOTIVE.FW.APP.App {
     }
 
     start() {
-        this.game = new Game(this);
+        this.game = new SnakeGame(this);
     }
 
     static sampleFunction(a: number) {

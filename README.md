@@ -1,14 +1,9 @@
-# some-game Bootstrap Project #
+# Snake game, based on some-game Bootstrap Project #
 
-Sample project to develop some game. It uses the following technologies:
-
-- HTML5
-- Phaser
-- Typescript (in browser transpilation using SystemJS)
-- Chaotive Framework
+SnakeGame project based on the implementation of the Snake game, for experimental purposes.
 
 You can see a working example of the current project build on:
-http://www.chaotive.cl/desarrollo/some-game
+http://www.chaotive.cl/desarrollo/snake-game
 
 ## Usage from browser ##
 
