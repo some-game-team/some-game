@@ -1,5 +1,3 @@
-import {Util} from "../GAME/Util";
-
 export class Menu extends Phaser.State {
     startButton: Phaser.Sprite;
 
@@ -11,7 +9,7 @@ export class Menu extends Phaser.State {
     }
 
     startAction() { // action binded to startButton
-        this.game.state.start('GameOver');
+        this.game.state.start('Stage');
     }
 
 }
