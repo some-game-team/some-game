@@ -4,3 +4,4 @@ target/
 .idea/
 bootstrap-project.iml
 grunt
+.ftppass
