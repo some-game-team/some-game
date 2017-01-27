@@ -13,10 +13,10 @@ export class Stage extends Phaser.State {
         this.createItem();
 
         let ks = this.game.input.keyboard.createCursorKeys();
-        ks.up.onDown.add(this.snake.moveUp, this.snake);
-        ks.down.onDown.add(this.snake.moveDown, this.snake);
-        ks.left.onDown.add(this.snake.moveLeft, this.snake);
-        ks.right.onDown.add(this.snake.moveRight, this.snake);
+        ks.up.onDown.add(this.snake.faceUp, this.snake);
+        ks.down.onDown.add(this.snake.faceDown, this.snake);
+        ks.left.onDown.add(this.snake.faceLeft, this.snake);
+        ks.right.onDown.add(this.snake.faceRight, this.snake);
     }
 
     update() {

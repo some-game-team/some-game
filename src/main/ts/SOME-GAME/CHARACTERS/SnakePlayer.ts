@@ -16,12 +16,12 @@ export class SnakePlayer extends Snake {
         this.requestTailNode();
     }
 
-    moveUp() { this.move("up") }
-    moveDown() { this.move("down") }
-    moveLeft() { this.move("left") }
-    moveRight() { this.move("right") }
+    faceUp() { this.face("up") }
+    faceDown() { this.face("down") }
+    faceLeft() { this.face("left") }
+    faceRight() { this.face("right") }
 
-    move(movingDirection) {
+    face(movingDirection) {
         this.movingDirection = movingDirection;
         this.stop();
         switch (movingDirection) {
