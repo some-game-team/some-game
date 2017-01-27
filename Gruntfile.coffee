@@ -22,7 +22,7 @@ module.exports = (grunt) ->
           port: 21
           authKey: 'key1'
         src: 'target'
-        dest: '/httpdocs/desarrollo/some-game'
+        dest: '/httpdocs/desarrollo/snake-game'
         forceVerbose: true
     mochaTest:
       options:
